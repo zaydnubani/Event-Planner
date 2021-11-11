@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Work Day Scheduler</title>
+  </head>
+
+  <body>
+    <header class="jumbotron">
+      <h1 class="display-3">Work Day Scheduler</h1>
+      <p class="lead">A simple calendar app for scheduling your work day</p>
+      <p id="currentDay" class="lead"></p>
+    </header>
+    <div class="container">
+      <!-- Timeblocks go here -->
+      
+      <!-- 0900 -->
+      <section >
+        <div class="input-group row time-block">
+          <span class="input-group-text hour" id="time0900">0900</span>
+          <textarea class="form-control textarea past" id="event0900" aria-label="With textarea" placeholder="Input Event..."></textarea>
+          <button class="btn btn-outline-secondary clearBtn" type="button" id="clearButton0900">
+            clear
+          </button>
+          <button class="btn btn-outline-secondary saveBtn" type="button" id="lockButton0900">
+            Lock
+          </button>
+        </div>
+      </section>
+
+      <!-- 1000 -->
+      <section>
+        <div class="input-group row time-block">
+          <span class="input-group-text hour" id="time1000">1000</span>
+          <textarea class="form-control textarea past" id="event1000" aria-label="With textarea" placeholder="Input Event..."></textarea>
+          <button class="btn btn-outline-secondary clearBtn" type="button" id="clearButton1000">
+            clear
+          </button>
+          <button class="btn btn-outline-secondary saveBtn" type="button" id="lockButton1000">
+            Lock
+          </button>
+        </div>
+      </section>
+
+      <!-- 1100 -->
+      <section>
+        <div class="input-group row time-block">
+          <span class="input-group-text hour" id="time1100">1100</span>
+          <textarea class="form-control textarea past" id="event1100" aria-label="With textarea" placeholder="Input Event..."></textarea>
+          <button class="btn btn-outline-secondary clearBtn" type="button" id="clearButton1100">
+            clear
+          </button>
+          <button class="btn btn-outline-secondary saveBtn" type="button" id="lockButton1100">
+            Lock
+          </button>
+        </div>
+      </section>
+
+      <!-- 1200 -->
+      <section>
+        <div class="input-group row time-block">
+          <span class="input-group-text hour" id="time1200">1200</span>
+          <textarea class="form-control textarea present" id="event1200" aria-label="With textarea" placeholder="Input Event..."></textarea>
+          <button class="btn btn-outline-secondary clearBtn" type="button" id="clearButton1200">
+            clear
+          </button>
+          <button class="btn btn-outline-secondary saveBtn" type="button" id="lockButton1200">
+            Lock
+          </button>
+        </div>
+      </section>
+
+      <!-- 1300 -->
+      <section>
+        <div class="input-group row time-block">
+          <span class="input-group-text hour" id="time1300">1300</span>
+          <textarea class="form-control textarea future" id="event1300" aria-label="With textarea" placeholder="Input Event..."></textarea>
+          <button class="btn btn-outline-secondary clearBtn" type="button" id="clearButton1300">
+            clear
+          </button>
+          <button class="btn btn-outline-secondary saveBtn" type="button" id="lockButton1300">
+            Lock
+          </button>
+        </div>
+      </section>
+
+       <!-- 1400 -->
+       <section>
+        <div class="input-group row time-block">
+          <span class="input-group-text hour" id="time1400">1400</span>
+          <textarea class="form-control textarea future" id="event1400" aria-label="With textarea" placeholder="Input Event..."></textarea>
+          <button class="btn btn-outline-secondary clearBtn" type="button" id="clearButton1400">
+            clear
+          </button>
+          <button class="btn btn-outline-secondary saveBtn" type="button" id="lockButton1400">
+            Lock
+          </button>
+        </div>
+      </section>
+
+      <!-- 1500 -->
+      <section>
+        <div class="input-group row time-block">
+          <span class="input-group-text hour" id="time1500">1500</span>
+          <textarea class="form-control textarea future" id="event1500" aria-label="With textarea" placeholder="Input Event..."></textarea>
+          <button class="btn btn-outline-secondary clearBtn" type="button" id="clearButton1500">
+            clear
+          </button>
+          <button class="btn btn-outline-secondary saveBtn" type="button" id="lockButton1500">
+            Lock
+          </button>
+        </div>
+      </section>
+
+      <!-- 1600 -->
+      <section>
+        <div class="input-group row time-block">
+          <span class="input-group-text hour" id="time1600">1600</span>
+          <textarea class="form-control textarea future" id="event1600" aria-label="With textarea" placeholder="Input Event..."></textarea>
+          <button class="btn btn-outline-secondary clearBtn" type="button" id="clearButton1600">
+            clear
+          </button>
+          <button class="btn btn-outline-secondary saveBtn" type="button" id="lockButton1600">
+            Lock
+          </button>
+        </div>
+      </section>
+
+       <!-- 1700 -->
+       <section>
+        <div class="input-group row time-block">
+          <span class="input-group-text hour" id="time1700">1700</span>
+          <textarea class="form-control textarea future" id="event1700" aria-label="With textarea" placeholder="Input Event..."></textarea>
+          <button class="btn btn-outline-secondary clearBtn" type="button" id="clearButton1700">
+            clear
+          </button>
+          <button class="btn btn-outline-secondary saveBtn" type="button" id="lockButton1700">
+            Lock
+          </button>
+        </div>
+      </section>
+        
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
