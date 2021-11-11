@@ -1,3 +1,7 @@
+var today = document.querySelector("#currentDay");
+
+today.textContent = moment().format("dddd, MMMM Do YYYY");
+
 function storeEvent(hour, event) {
     localStorage.getItem(hour);
     localStorage.setItem(hour, event);
